@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Stylish a Fashion Category Flat bootstrap Responsive website Template | Home :: w3layouts</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Stylish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="{% static 'homepage/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
+<link href="{% static 'homepage/css/style.css' %}" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="{% static 'homepage/css/flexslider.css' %}" type="text/css" media="screen" />
+<!-- js -->
+<script src="{% static 'homepage/js/jquery-1.11.1.min.js' %}"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="{% static 'homepage/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'homepage/js/easing.js' %}"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+<!--pop-up-->
+<script src="{% static 'homepage/js/menu_jquery.js' %}"></script>
+<!--//pop-up-->
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-left">
+				<ul>
+					<li><a href="http://127.0.0.1:8000/account/">Tài Khoản</a></li>
+					<li class="login" >
+						<div id="loginContainer"><a href="#" id="loginButton"><span>Đăng Nhập</span></a>
+						    <div id="loginBox">
+						        <form id="loginForm">
+									<fieldset id="body">
+										<fieldset>
+											<label for="email">Địa Chỉ Email</label>
+											<input type="text" name="email" id="email">
+										</fieldset>
+										<fieldset>
+											<label for="password">Mật Khẩu</label>
+											<input type="password" name="password" id="password">
+										</fieldset>
+										<input type="submit" id="login" value="Sign in">
+										<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+									</fieldset>
+									<span><a href="#">Quên mật khẩu?</a></span>
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<a href="http://127.0.0.1:8000/"> <img src="{% static 'homepage/images/logo.jpg' %}" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="{% static 'homepage/images/menu.png' %}" alt=""/></span>
+				<ul>
+					<li><a class="active" href="http://127.0.0.1:8000/">Trang Chủ</a></li>
+					<li><a href="http://127.0.0.1:8000/about/">Bài Đăng</a></li>
+					<li><a href="gallery.html"></a></li>
+					<li><a href="news.html">Thông Báo</a></li>
+					<li><a href="codes.html"></a></li>
+					<li><a href="http://127.0.0.1:8000/contact/">Liên Hệ</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+							$("span.menu").click(function(){
+								$(".top-nav ul").slideToggle("slow" , function(){
+								});
+							});
+				</script>
+				<!-- script-for-menu -->
+			</div>
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="search term..." type="search" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<!-- search-scripts -->
+			<script src="{% static 'homepage/js/classie.js' %}"></script>
+			<script src="{% static 'homepage/js/uisearch.js' %}"></script>
+				<script>
+					new UISearch( document.getElementById( 'sb-search' ) );
+				</script>
+			<!-- //search-scripts -->
+		</div>
+	</div>
+	<!--//header-->
+	<!--banner-->
+	<div class="banner">
+		<!-- banner-text Slider starts Here -->
+		<script src="{% static 'homepage/js/responsiveslides.min.js' %}"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+				$(function () {
+				// Slideshow 3
+					$("#slider3").responsiveSlides({
+					auto: true,
+					pager:true,
+					nav:true,
+					speed: 500,
+					namespace: "callbacks",
+					before: function () {
+					$('.events').append("<li>before event fired.</li>");
+					},
+					after: function () {
+						$('.events').append("<li>after event fired.</li>");
+					}
+				});	
+			});
+		</script>
+		<!--//End-slider-script -->
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner1">
+					</div>
+				</li>
+				<li>
+					<div class="banner1 banner2">
+					</div>
+				</li>
+				<li>
+					<div class="banner1 banner3">
+					</div>
+				</li>
+			</ul>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--welcome-->
+	<div class="welcome">
+		<div class="container">
+			<h1 class="hdng">DTUMARKET</h1>
+			<p> Đem Mọi Thứ Về Trong Tay Bạn</p>
+			<div class="welcome-info">
+				<div class="col-md-6 welcome-grids">
+					<img src="{% static 'homepage/images/img1.jpg' %}" alt=""/>
+				</div>
+				<div class="col-md-6 welcome-grids">
+					<img src="{% static 'homepage/images/img2.jpg' %}" alt=""/>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae </p>
+		</div>
+			<div class="row">
+            <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/tailieu.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Trao đổi tài liệu</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/vieclam.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Việc Làm</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+               <img class="rounded-circle" src="{% static 'homepage/images/nhatro.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Phòng Trọ</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/thucung.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Thú Cưng</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/thethao.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Thể Thao</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card mb-2box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/MavenLogoIcon.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Thời Trang</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+               <img class="rounded-circle" src="{% static 'homepage/images/dogiadung.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Đồ Gia Dụng</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/dienthoai.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Điện Thoại</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/laptop.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Laptop</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="col-md-2">
+              <div class="card mb-2 box-shadow">
+                <img class="rounded-circle" src="{% static 'homepage/images/xemay.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Oto-Xe Máy</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+	</div>
+	<!--//welcome-->
+	<!--banner-bottom-->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="col-md-4 banner-bottom-grids">
+				<h2>Who We Are ?</h2>
+			</div>
+			<div class="col-md-4 banner-bottom-grids">
+				<h4>Lorem ipsum dolor sit amet</h4>
+				<p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis. </p>
+			</div>
+			<div class="col-md-4 banner-bottom-grids">
+				<h4>Lorem ipsum dolor sit amet</h4>
+				<p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis. </p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//banner-bottom-->
+	<!--work-->
+	<div class="work">
+		<div class="col-md-8 work-grids work-img">
+		</div>
+		<div class="col-md-4 work-grids">
+			<h3>What We Do ?</h3>
+			<p>Impedit quo minus id quod maxime placeat facere possimus omnis cum soluta nobis est eligendi optio cumque </p>
+			<ul>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Rerum hic tenetur</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Molestiae non recusandae</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Voluptates repudiandae</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Necessitatibus saepe</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Debitis aut rerum</a></li>
+			</ul>
+
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="work">
+		<div class="col-md-4 work-grids work-grids-left">
+			<h3>Why You Choose Us ?</h3>
+			<p>Impedit quo minus id quod maxime placeat facere possimus omnis cum soluta nobis est eligendi optio cumque </p>
+			<ul>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Rerum hic tenetur</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Molestiae non recusandae</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Voluptates repudiandae</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Necessitatibus saepe</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Debitis aut rerum</a></li>
+			</ul>
+
+		</div>
+		<div class="col-md-8 work-grids work-img work-img-btm">
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+
+	<!--//work-->
+	<!--services-->
+	<div class="services">
+		<div class="container">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+								</div>
+								<h4>Dltrices</h4>
+								<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
+							</div>
+						</li>
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+								</div>
+								<h4>Notareq</h4>
+								<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
+							</div>
+						</li>
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+								</div>
+								<h4>Mirumest</h4>
+								<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
+							</div>
+						</li>
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+								</div>
+								<h4>Processus</h4>
+								<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--FlexSlider-->
+					<script defer src="{% static 'homepage/js/jquery.flexslider.js' %}js/jquery.flexslider.js"></script>
+					<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				  </script>
+			<!--End-slider-script-->
+		</div>
+	</div>
+	<!--//services-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<p> Tất cả các quyền | Thiết kế bởi <a href="http://DTUMARKET.com">DTUMARKET</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'homepage/js/bootstrap.js' %}"></script>
+</body>
+</html>
